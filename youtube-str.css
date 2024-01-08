@@ -1,0 +1,370 @@
+body::-webkit-scrollbar{
+    background-color: black;
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(107, 107, 107);
+    border-radius: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #0F0F0F;
+}
+.header{
+    height: 50px;
+    width: 100%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header #icons i{
+    color: white;
+}
+.header #icons img{
+    font-size: 12px;
+}
+.header input{
+    width: 35%;
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 0.4vw;
+    background-color: black;
+    color: white;
+    font-size: 1.2vw;
+}
+.header input:focus{
+    border: 1px solid rgb(0, 153, 255);
+    outline:none;
+}
+.header .ri-search-line{
+    display: none;
+}
+.header #profile-box i{
+    color: white;
+}
+.header #profile-box div{
+    height: 28px;
+    width: 28px;
+    border-radius: 20px;
+    background-color: pink;
+    display: inline-block;
+    background: url(media/Sea-girl.webp) no-repeat center center/cover;
+}
+/* Hero */
+.hero{
+    display: flex;
+}
+.hero .box-left{
+    min-height: calc(30vh - 50px);
+    width: 65%;
+    padding:0vw 1vw;
+    /* background-color: crimson; */
+}
+#song-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-left video{
+    border-radius: 12px;
+}
+.box-left h2{
+    color: white;
+    font-size: 1.55vw;
+    font-family: roboto;
+    font-weight: 500;
+}
+/* .box-left .channel-det{
+    background-color: pink;
+} */
+.channel-det #channel-icon{
+    height: 3.6vw;
+    width: 3.6vw;
+    border-radius: 50%;
+    background: url(media/channels4_profile.jpg) no-repeat center center/cover;
+}
+.channel-det #subs h6{
+    font-size: 1.2vw;
+    color: white;
+}
+.channel-det #subs span{
+    font-size: 0.9vw;
+    color: gray;
+}
+.channel-det #subs #sub-btn{
+    border: none;
+    padding: 0.55vw 0.7vw;
+    border-radius: 30px;
+    font-size: 1vw;
+    color: black;
+    font-weight: 500;
+}
+.box-left .like{
+    color: white;
+    padding: 0.25vw 0.9vw;
+    border-radius: 50px;
+    background-color: #272727;
+    transition: all linear 0.2s;
+}
+.box-left .like:hover{
+    background-color: #515151;
+}
+.box-left #like-btn{
+    border-right: 1px solid gray;
+
+}
+.box-left .like i{
+    font-size: 1.25vw;
+}
+.box-left .like span{
+    font-size: 1.05vw;
+}
+.box-left .share{
+    color: white;
+    padding: 0.25vw 0.8vw;
+    border-radius: 50px;
+    background-color: #272727;
+    transition: all linear 0.2s;
+}
+.box-left .share:hover{
+    background-color: #515151;
+}
+.box-left .share i{
+    font-size: 1.35vw;
+}
+.box-left .share span{
+    font-size: 1.05vw;
+}
+.box-left .down{
+    color: white;
+    padding: 0.25vw 0.8vw;
+    border-radius: 50px;
+    background-color: #272727;
+    transition: all linear 0.2s;
+}
+.box-left .down:hover{
+    background-color: #515151;
+}
+.box-left .down i{
+    font-size: 1.15vw;
+}
+.box-left .down span{
+    font-size: 1.05vw;
+}
+
+
+
+.hero .box-right{
+    min-height: calc(30vh - 50px);
+    width: 35%;
+    /* background-color: royalblue; */
+}
+.box-right #all{
+    color: black;
+    margin: 0;
+    padding: 0.5vw 0.9vw;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: 500;
+}
+.box-right .tag{
+    color: white;
+    margin: 0;
+    padding: 0.5vw 0.9vw;
+    border-radius: 10px;
+    background-color: #272727;
+}
+.box-right .tag span{
+    font-size: 1.05vw;
+    margin: 0;
+}
+.box-right .song{
+    width: 38%;
+    /* height: 10vw; */
+    border-radius: 10px;
+    
+}
+.box-right #song1{
+    background: url(media/Teri\ Ho\ Na\ Saki.jpg) no-repeat center center/cover;
+}
+.box-right #song2{
+    background: url(media/sarkare.jpg) no-repeat center center/cover;
+}
+.box-right #song3{
+    background: url(media/hum\ tumse.jpg) no-repeat center center/cover;
+}
+.box-right #song4{
+    background: url(media/ghumshuda\ \(2\).jpg) no-repeat center center/cover;
+}
+.box-right #song5{
+    background: url(media/crown.jpg) no-repeat center center/cover;
+}
+.box-right .song-det{
+    width: 50%;
+    /* background-color: pink ; */
+}
+/* .song{
+    height: 7vw;
+} */
+.song-det h6{
+    font-size: 1.1vw;
+    color: white;
+}
+.song-det span{
+    font-size: 0.95vw;
+    color: rgb(179, 173, 173);
+}
+#time{
+    display: none;
+}
+
+@media (max-width:670px) {
+   .header input{
+    display: none;
+   }
+   .header .ri-search-line{
+    display: block;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero .box-left{
+        width: 100%;
+        min-height: calc(30vh - 50px);
+    }
+    .box-left h2{
+        font-size: 2.5vw;
+    }
+    .channel-det #channel-icon{
+        height: 6.8vw;
+        width: 6.8vw;
+    }
+    .channel-det #subs h6{
+        font-size: 2.5vw;
+    }
+    .channel-det #subs span{
+        font-size: 1.5vw;
+    }
+    .channel-det #subs #sub-btn{
+        padding: 0.7vw 1.8vw;
+        font-size: 1.3vw;
+    }
+    .box-left .like{
+        padding: 0.6vw 1.4vw;
+    }
+    .box-left .like i{
+        font-size: 1.8vw;
+    }
+    .box-left .like span{
+        font-size: 1.4vw;
+    }
+    .box-left .share{
+        padding: 0.6vw 1.4vw;
+    }
+    .box-left .share i{
+        font-size: 1.8vw;
+    }
+    .box-left .share span{
+        font-size: 1.4vw;
+    }
+    .box-left .down{
+        padding: 0.6vw 1.4vw;
+    }
+    .box-left .down i{
+        font-size: 1.8vw;
+    }
+    .box-left .down span{
+        font-size: 1.4vw;
+    }
+
+
+    .hero .box-right{
+        min-height: 30vh;
+        width: 100%;
+    }
+    .box-right .song-det{
+        width: 100%;
+    }
+    #tags{
+        width: 45%;
+        margin-top: 2vw;
+    }
+    .box-right #all{
+        border-radius: 5px;
+    }
+    .box-right .tag{
+        padding: 0.5vw 1.2vw;
+        border-radius: 5px;
+        background-color: #272727;
+    }
+    .box-right .tag span{
+        font-size: 1.35vw;
+        margin: 0;
+    }
+    .song-det{
+        height: 14vw;
+    }
+    .song-det h6{
+        font-size: 1.6vw;
+        color: white;
+    }
+    .song-det span{
+        font-size: 1.5vw;
+    }
+    #time{
+        margin-top: 5px;
+        display: block;
+        color: gray;
+        background-color: #272727;
+        padding: 1px 2px;
+        border-radius: 2px;
+        font-size: 1.5vw;
+    }
+    
+}
+
+@media (max-width:450px){
+    .box-left h2{
+        font-size: 3.5vw;
+    }
+    /* .channel-det #channel-icon{
+        height:8vw;
+        width:8vw;
+    }
+    .channel-det #subs h6{
+        font-size: 3.1vw;
+    }
+    .channel-det #subs span{
+        font-size: 1.8vw;
+    }
+    .channel-det #subs #sub-btn{
+        padding: 0.7vw 1.8vw;
+        font-size: 1.8vw;
+    } */
+    /* #song-details{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2vw;
+    } */
+    /* .box-left .like{
+        padding: 0.6vw 1.4vw;
+    }
+    .box-left .like i{
+        font-size: 2.2vw;
+    }
+    .box-left .like span{
+        font-size: 2vw;
+    } */
+}
